@@ -1,388 +1,89 @@
-/*617 lines*/
-*{
-box-sizing: border-box;
-}
-body{
-background-color: #fff;
-font-family: Roboto;
-height: 4000px;
-}
-.clearfix{clear: both;}
-.container{width:1170px;margin: auto;}
-
-/*========Start Header========*/
-.header .slider{
-height: 600px;
-background-image: url(../images/img1.jpg); 
-background-size: cover;
-}
-.header .slider .intro{padding-top: 200px;color: #fff;}
-
-.header .slider .intro h2 {
-margin: 0;
-font-size: 60px;
-border-top: 3px solid #fff;
-border-bottom: 3px solid #fff;
-padding: 5px 0 ;
-width: 500px;
-text-align: center;  
-color: #fff;    
-}
-.header .slider .intro button
-{
-margin-top: 70px;
-margin-left:170px ;   
-width: 150px;
-height: 50px;
-background: none;
-color: #2EBD4C;
-border: 2px solid #2EBD4C;
-font-size: 24px;
-}
-.header .navbar {
-color: #fff;
-background-color: #252f31;
-overflow: hidden;
-text-transform: capitalize;
-}
-.header .navbar .letter   {
-float: left;
-height: 42px;
-width: 42px;
-background-color: #4b5456;
-margin: 15px 0;
-position: relative;
-margin-right: 15px; 
-}
-.header .navbar .letter span{
-font-size: 32px;
-color: #2EBD4C;
-font-weight: bold;
-position: absolute;
-top: 50%;
-text-transform: uppercase;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-.header .navbar h2 {text-transform: uppercase;color: #fff;}
-
+ *{box-sizing:border-box;}
+body{background-color:#fff;font-family:Roboto;height:4000px;}
+.clearfix{clear:both;}
+.container{width:1170px;margin:auto;}
+.header .slider{height:600px;background-image:url(../images/img1.jpg);background-size:cover;}
+.header .slider .intro{padding-top:200px;color:#fff;}
+.header .slider .intro h2{margin:0;font-size:60px;border-top:3px solid #fff;border-bottom:3px solid #fff;padding:5px 0;width:500px;text-align:center;color:#fff;}
+.header .slider .intro button{margin-top:70px;margin-left:170px;width:150px;height:50px;background:none;color:#2EBD4C;border:2px solid #2EBD4C;font-size:24px;}
+.header .navbar{color:#fff;background-color:#252f31;overflow:hidden;text-transform:capitalize;}
+.header .navbar .letter{float:left;height:42px;width:42px;background-color:#4b5456;margin:15px 0;position:relative;margin-right:15px;}
+.header .navbar .letter span{font-size:32px;color:#2EBD4C;font-weight:bold;position:absolute;top:50%;text-transform:uppercase;left:50%;transform:translate(-50%, -50%);}
+.header .navbar h2{text-transform:uppercase;color:#fff;}
 .header .navbar h2 span{color:#2EBD4C;}
-.header .navbar ul {
-list-style: none;
-padding-left: 0;  
-overflow: hidden;
-float: right;
-}
-.header .navbar ul li {float: left;padding: 10px;}
-
-.header .navbar ul li a{text-decoration: none;color: #fff;font-size: 18px;}
-
+.header .navbar ul{list-style:none;padding-left:0;overflow:hidden;float:right;}
+.header .navbar ul li{float:left;padding:10px;}
+.header .navbar ul li a{text-decoration:none;color:#fff;font-size:18px;}
 .header .navbar ul li.active a ,
-.header .navbar ul li a:hover{
-color:#2EBD4C;
-}
-
-/*========EndHeader===========*/
-/*========Start Features========*/
-.features {overflow: hidden;padding-top: 40px;padding-bottom: 50px;}
-
-.features .feat{width: 33.33333%;height: 150px;}
-
-.features .feat h2{text-align: center;}
-
-/*========End Features========*/
-/*========Start About Me ========*/
-
-.About{background-color: #F2F2F2;overflow: hidden;}
-
-.About .img {width: 40%;}
-
-.About .img img{width: 90%;margin-top: 35px;}
-
-.About .info{float: right;width: 60%;}
-
-.About .info h2 {margin: 30px 0  20px 40px;}
-
-.About .info p {margin: 0 0 10px 40px;}
-
-.About .info p:last-of-type{margin-top: 20px;}
-
-.About .info .box{overflow: hidden;margin: 30px 0 0 40px;}
-
-.About .info .box >div{width: 50%;min-height: 100px;}
-
-.About .info .box div img{margin:15px 15px 0 0 ; }
-
-.About .info .box div p{margin: -6px 0 10px 55px;}
-
-/*========End About Me ========*/
-
-/*========Start Skills========*/
-.skills{
-padding-top: 30px;
-padding-bottom: 30px;
-overflow: hidden;
-}
-.skills .right-skills{width: 50%;}
-
-.skills .right-skills h2 {margin: 10px 0  15px 20px;}
-
-.skills .right-skills  p{margin: 0 0 10px 20px;}
-
-.skills .right-skills  button {
-width: 150px;
-height: 50px;
-background: none;
-color: #2EBD4C;
-border: 2px solid #2EBD4C;
-font-size: 24px;
-margin-left: 20px;
-margin-top: 20px;
-}
-
-.skills .progress{float: right; width: 50%;}
-
-.skills .progress .tech{margin-left: 40px;}
-
-.skills .progress .tech h2{color: #555;}
-
-.skills .progress .tech div{background-color: #F2F2F2;height: 25px;}
-
-.skills .progress .tech div span{
-background-color:#2EBD4C;
-line-height: 25px;
-height: 25px;
-display: block;
-text-align: right;
-color: #fff;
-font-weight: bold;
-}
-/*========End Skills========*/
-/*========Start Resume ========*/
-.resume
-{
-text-align: center;
-background-color: #F2F2F2;
-padding-top: 30px;
-padding-bottom: 50px;    
-}
-.resume p {padding: 0  40px;}
-.resume button 
-{
-width: 200px;
-height: 50px;
-background: none;
-color: #2EBD4C;
-border: 2px solid #2EBD4C;
-font-size: 20px;
-margin-top: 30px;
-}
-/*========End Resume========*/
-/*========Start education========*/
-.education{padding-top: 30px;padding-bottom: 30px;overflow: hidden;}
-
-.education .main{width: 50%;}
-
-.education .main h2 {margin: 10px 0  15px 20px;}
-
-.education .main p {margin: 0 0 10px 20px;}
-
-.education .exp{float: right;width: 50%;}
-
-.education .exp hr {
-background-color: #999;
-height: 1px;
-border: 0;
-margin-left:20px
-}
-.education .exp .expcont{
-width: 100%;
-height: 300px;
-margin-top: 50px;
-margin-left: 50px;
-}
+.header .navbar ul li a:hover{color:#2EBD4C;}
+.features{overflow:hidden;padding-top:40px;padding-bottom:50px;}
+.features .feat{width:33.33333%;height:150px;}
+.features .feat h2{text-align:center;}
+.About{background-color:#F2F2F2;overflow:hidden;}
+.About .img{width:40%;}
+.About .img img{width:90%;margin-top:35px;}
+.About .info{float:right;width:60%;}
+.About .info h2{margin:30px 0 20px 40px;}
+.About .info p{margin:0 0 10px 40px;}
+.About .info p:last-of-type{margin-top:20px;}
+.About .info .box{overflow:hidden;margin:30px 0 0 40px;}
+.About .info .box >div{width:50%;min-height:100px;}
+.About .info .box div img{margin:15px 15px 0 0;}
+.About .info .box div p{margin:-6px 0 10px 55px;}
+.skills{padding-top:30px;padding-bottom:30px;overflow:hidden;}
+.skills .right-skills{width:50%;}
+.skills .right-skills h2{margin:10px 0 15px 20px;}
+.skills .right-skills p{margin:0 0 10px 20px;}
+.skills .right-skills button{width:150px;height:50px;background:none;color:#2EBD4C;border:2px solid #2EBD4C;font-size:24px;margin-left:20px;margin-top:20px;}
+.skills .progress{float:right;width:50%;}
+.skills .progress .tech{margin-left:40px;}
+.skills .progress .tech h2{color:#555;}
+.skills .progress .tech div{background-color:#F2F2F2;height:25px;}
+.skills .progress .tech div span{background-color:#2EBD4C;line-height:25px;height:25px;display:block;text-align:right;color:#fff;font-weight:bold;}
+.resume{text-align:center;background-color:#F2F2F2;padding-top:30px;padding-bottom:50px;}
+.resume p{padding:0 40px;}
+.resume button{width:200px;height:50px;background:none;color:#2EBD4C;border:2px solid #2EBD4C;font-size:20px;margin-top:30px;}
+.education{padding-top:30px;padding-bottom:30px;overflow:hidden;}
+.education .main{width:50%;}
+.education .main h2{margin:10px 0 15px 20px;}
+.education .main p{margin:0 0 10px 20px;}
+.education .exp{float:right;width:50%;}
+.education .exp hr{background-color:#999;height:1px;border:0;margin-left:20px}
+.education .exp .expcont{width:100%;height:300px;margin-top:50px;margin-left:50px;}
 .education .exp .expcont h2{margin:20px 0 15px 20px;}
-
-.education .exp .expcont h4{
-margin:15px 0 10px 20px;
-line-height: 1.7;
-color:#6a6e71;
-}
-.education .exp .expcont .squre
-{
-height: 42px;
-width: 70px;
-background-color:#2EBD4C;
-margin: 5px 0;
-position: relative;
-margin-left: 20px;
-}
-.education .exp .expcont .squre span{
-font-size:14px;
-color:#fff;
-font-weight: bold;
-position: absolute;
-top: 50%;
-text-transform: uppercase;
-left: 50%;
-transform: translate(-50%, -50%);
-}
+.education .exp .expcont h4{margin:15px 0 10px 20px;line-height:1.7;color:#6a6e71;}
+.education .exp .expcont .squre{height:42px;width:70px;background-color:#2EBD4C;margin:5px 0;position:relative;margin-left:20px;}
+.education .exp .expcont .squre span{font-size:14px;color:#fff;font-weight:bold;position:absolute;top:50%;text-transform:uppercase;left:50%;transform:translate(-50%, -50%);}
 .education .exp .expcont p{margin:20px 0 15px 20px;}
-/*========End education========*/
-/*========Start testemonials ========*/
-
-.testemonials{
-background-color: #F2F2F2;
-text-align: center;
-padding-top:50px;
-padding-bottom: 50px;
-overflow: hidden;
-}
-.testemonials  blockquote {
-font-size: 18px;
-margin: 0 0 10px 20px;
-line-height: 1.7;
-color: #6a6e71;
-padding: 0  40px;
-}
-.testemonials h4 {
-color: #555;  
-font-weight: bold;
-font-size: 20px;    
-}
-.testemonials .cricle span
-{
-width: 12px;
-height: 12px;
-border: 1px solid #2ecc71;
-display: inline-block;
-border-radius: 50%;
-margin: 0 10px;
-cursor: pointer;
-}
-.testemonials .cricle span.active , 
-.testemonials .cricle span:hover{background-color: #2ecc71;}
-/*========End testemonials========*/
-/*========Start Portofolio========*/
-.Portfolio
-{
-padding-top: 30px;
-padding-bottom: 30px;
-text-align: center;
-}
-.Portfolio p{margin: 10px  0 30px 20px;padding: 0 40px;}
-
-.Portfolio .works{overflow: hidden;}
-.Portfolio .works > div {
-float: left;
-width: 30%;   
-margin-bottom: 10px;
-margin-left: 20px;    
-}
- 
-.Portfolio .works > div img  {width: 92%;margin:10px;}
-
-.Portfolio .works > div img:hover{transform: scale(1.1,1.1);}
-
-/*========End Portofolio========*/
-
-/*========Start contact me========*/
-
-.contact-me
-{
-padding-top: 50px;
-padding-bottom: 50px;
-background-color:#252f31;
-overflow: hidden;
-}
-.contact-me .info{width: 50%;margin-right:5%;}
-
+.testemonials{background-color:#F2F2F2;text-align:center;padding-top:50px;padding-bottom:50px;overflow:hidden;}
+.testemonials blockquote{font-size:18px;margin:0 0 10px 20px;line-height:1.7;color:#6a6e71;padding:0 40px;}
+.testemonials h4{color:#555;font-weight:bold;font-size:20px;}
+.testemonials .cricle span{width:12px;height:12px;border:1px solid #2ecc71;display:inline-block;border-radius:50%;margin:0 10px;cursor:pointer;}
+.testemonials .cricle span.active ,
+.testemonials .cricle span:hover{background-color:#2ecc71;}
+.Portfolio{padding-top:30px;padding-bottom:30px;text-align:center;}
+.Portfolio p{margin:10px 0 30px 20px;padding:0 40px;}
+.Portfolio .works{overflow:hidden;}
+.Portfolio .works > div{float:left;width:30%;margin-bottom:10px;margin-left:20px;}
+.Portfolio .works > div img{width:92%;margin:10px;}
+.Portfolio .works > div img:hover{transform:scale(1.1,1.1);}
+.contact-me{padding-top:50px;padding-bottom:50px;background-color:#252f31;overflow:hidden;}
+.contact-me .info{width:50%;margin-right:5%;}
 .contact-me .info h2{margin-left:40px;color:#fff;}
-
 .contact-me .info p{margin-left:40px;}
-
-.contact-me .info p strong{color: #fff;font-weight: normal;}
-
-.contact-me .form{width: 45%;float: right;overflow:hidden;}
-
-.contact-me .form form label
-{
-display: block;
-color: #fff;
-font-size: 18px;    
-margin: 15px 0;
-}
-.contact-me .form form input[type="text"],[type="email"]
-{
-color: #fff;    
-padding: 10px ;
-background-color: #4b5456;
-width: 80%;
-border: none;    
-margin-bottom: 10px;
-}
- 
-.contact-me .form form textarea
-{
-color: #fff;    
-padding: 10px ;
-background-color: #4b5456;
-width: 80%;
-border: none;    
-margin-bottom: 10px;
-height: 200px    
-}
-
-.contact-me .form form button
-{
-width: 150px;
-height: 50px;
-background-color:#191f21;
-color: #fff;
-border: none;
-font-weight: bold;
-font-size: 18px;    
-}
-/*========End contact me========*/
-/*======== Start footer========*/
-.footer{
-background-color:#191E22;
-color:#6a6e71; 
-text-align: center;
-padding:15px 0;
-overflow: hidden; 
-}
-.footer span strong{color: #2ecc71;font-weight: normal;}
-.footer ul
-{
-padding-left: 0 ; 
-margin:0;
-list-style: none;
-float: right;    
-}
-.footer ul li {margin:0px 3px 0 ;display: inline-block;} 
-
-.fa{font-size: 20px;}
-
-.fa:hover{color: white;cursor: pointer;}
-/*========End footer========*/
-/*=========Start My Framework============*/
+.contact-me .info p strong{color:#fff;font-weight:normal;}
+.contact-me .form{width:45%;float:right;overflow:hidden;}
+.contact-me .form form label{display:block;color:#fff;font-size:18px;margin:15px 0;}
+.contact-me .form form input[type="text"],[type="email"]{color:#fff;padding:10px;background-color:#4b5456;width:80%;border:none;margin-bottom:10px;}
+.contact-me .form form textarea{color:#fff;padding:10px;background-color:#4b5456;width:80%;border:none;margin-bottom:10px;height:200px}
+.contact-me .form form button{width:150px;height:50px;background-color:#191f21;color:#fff;border:none;font-weight:bold;font-size:18px;}
+.footer{background-color:#191E22;color:#6a6e71;text-align:center;padding:15px 0;overflow:hidden;}
+.footer span strong{color:#2ecc71;font-weight:normal;}
+.footer ul{padding-left:0;margin:0;list-style:none;float:right;}
+.footer ul li{margin:0px 3px 0;display:inline-block;}
+.fa{font-size:20px;}
+.fa:hover{color:white;cursor:pointer;}
 .fl-left{float:left;}
-p{line-height: 1.7;color: #6a6e71;}
-h2{color: #555;font-size: 27px;font-weight: bold;}
-h3{font-size: 25px;color: #555;}
-
-
-/*=========== End My Framework============*/
-
-
-
-
-
-
-
-
-
-
-
-
+p{line-height:1.7;color:#6a6e71;}
+h2{color:#555;font-size:27px;font-weight:bold;}
+h3{font-size:25px;color:#555;}
